@@ -1,0 +1,99 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Manrope', sans-serif;
+}
+
+#card {
+  border-radius: 20px;
+  background-color: white;
+  height: auto;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+#red {
+  height: 50vh;
+}
+
+#drawers img {
+  width: 100%;
+  border-radius: 20px 0 0 20px;
+  margin-left: -15px;
+  height: 100%;
+}
+
+#text {
+  padding: 30px;
+}
+
+.hovered {
+  border-radius: 20px;
+  background-color: hsl(217, 19%, 35%);
+  height: auto;
+  width: auto;
+  margin-top:20px;
+}
+
+h4 {
+  color: hsl(217, 19%, 35%);
+}
+
+.name {
+  color: hsl(217, 19%, 35%);
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#text .share {
+  padding: 10px;
+  float: right;
+  margin-top: -15px;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.date {
+  color: hsl(214, 17%, 51%);
+  margin-left: 15px;
+  font-size:14px;
+}
+
+p {
+  font-size:14px;
+  color: hsl(214, 17%, 51%);
+}
+
+#text img {
+  border-radius: 50%;
+  width: 10%;
+  float: left;
+}
+
+@media(max-width:767px){
+  #card {
+    margin-top:10px;
+  }
+
+  body {
+    padding:20px;
+  }
+
+  #drawers {
+    padding-right: 0!important;
+    padding-left:0 !important;
+  }
+
+  #drawers img{
+    border-radius: 10px 10px 0 0 !important;
+    margin-left: 0 !important;
+  }
+}
