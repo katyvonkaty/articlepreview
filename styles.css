@@ -26,6 +26,11 @@ a {
   color: hsl(228, 45%, 44%);
 }
 
+a:hover {
+  text-decoration:none;
+  color:hsl(228, 45%, 44%)
+}
+
 #red {
   height: 50vh;
 }
