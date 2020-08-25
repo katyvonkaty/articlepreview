@@ -7,8 +7,8 @@ body {
   border-radius: 20px;
   background-color: white;
   height: auto;
-  margin-top: 60px;
-  width: 100%;
+  margin-top: 160px;
+  width: 80%;
 }
 
 .attribution {
@@ -16,6 +16,12 @@ body {
   text-align: center;
 }
 
+a {
+  color: #6c757d;
+  border-radius: 50%;
+  padding: 5px;
+  background-color:#ecf2f8;
+}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -35,13 +41,6 @@ body {
   padding: 30px;
 }
 
-.hovered {
-  border-radius: 20px;
-  background-color: hsl(217, 19%, 35%);
-  height: auto;
-  width: auto;
-  margin-top:20px;
-}
 
 h4 {
   color: hsl(217, 19%, 35%);
@@ -78,6 +77,75 @@ p {
   float: left;
 }
 
+.active .share-element{
+    display: block !important;
+}
+
+.active #btn-share{
+color: #fff;
+border-radius: 20%;
+}
+
+.article-share{
+    position: relative;
+    float:right;
+
+}
+
+.article-share .share-element{
+    display: none;
+    background-color: var(--very-dark-grayish-blue);
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.share-element::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #48556a transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-share{
+  display: flex;
+  padding: 3px 25px;
+  align-items: center;
+  border-radius: 30px;
+  background-color: hsl(217, 19%, 35%);
+}
+
+#article-share img {
+  width: auto;
+display: inline;
+float: none;
+}
+
+.share-title{
+    margin: 0 7.5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8em;
+    color: white;
+}
+
+
+.socials{
+    font-size: 1.4em;
+    display: flex;
+}
+
+.socials span{
+    margin: 0 7.5px;
+}
+
 @media(max-width:767px){
   #card {
     margin-top:10px;
@@ -95,5 +163,11 @@ p {
   #drawers img{
     border-radius: 10px 10px 0 0 !important;
     margin-left: 0 !important;
+  }
+}
+
+@media (min-width:992px){
+  #card{
+    width:40%;
   }
 }

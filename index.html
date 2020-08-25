@@ -8,6 +8,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" /> -->
 
 
   <title>Frontend Mentor | Article preview component</title>
@@ -18,26 +20,38 @@
 
   <div class="container" id="card">
     <div class="row">
-      <div class="col-sm-5" id="drawers">
+      <div class="col-sm-6" id="drawers">
         <img src="images/drawers.jpg">
       </div>
-      <div class="col-sm-7 offset-col-1" id="text">
+      <div class="col-sm-6" id="text">
         <h4>Shift the overall look and feel by adding these wonderful touches to furniture in your home.</h4>
         <p> Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. Ive got some tips to help you make any room feel comfortable. </p>
-        <div class='inline'>
+        <div class='inline' id="inline">
           <span> <img src="images/avatar-michelle.jpg"> </span> <span class='name'> Michelle B <br> </span>
           <span class='date'> 08/20/2020 </span>
-          <img src="images/icon-share.svg" class="share">
+          <div id="article-share" class="article-share">
+            <a href="#" id="btn-share"><i class="fas fa-share"></i></a>
+            <div class="share-element">
+              <div class="content-share">
+                <span class="share-title">Share</span>
+                <ul class="socials">
+                  <span><img src="images/icon-facebook.svg"></span>
+                      <span><img src="images/icon-pinterest.svg"></span>
+                          <span><img src="images/icon-twitter.svg"></span>
+
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="index.js"></script>
 </body>
